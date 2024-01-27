@@ -5,6 +5,7 @@ using TechMed.Infrastructure.Persistence.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
 builder.Services.AddSingleton<ITechMedContext, TechMedContext>();
 builder.Services.AddScoped<IMedicoService, MedicoService>();
